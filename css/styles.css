@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700%7CRaleway:400,500%7CRoboto:400,900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -332,10 +333,146 @@ html {
 
 body {
   min-height: 100%;
-  font: 300 'Roboto', sans-serif;
-  background: #9789f9; }
+  font: 1.6rem/1.6 'Roboto', sans-serif;
+  background: #9789f9;
+  color: #181818; }
+
+.main {
+  width: 100%; }
 
 .container {
   margin: 0 auto;
   max-width: 1070px;
-  width: 96%; }
+  width: 96%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px; }
+
+.card {
+  background-color: #fff;
+  width: 330px;
+  min-height: 615px;
+  text-align: center;
+  padding: 35px 35px 0 35px;
+  background-color: #f5f4f9; }
+  .card__title {
+    color: inherit;
+    font-family: "Bebas Neue";
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .card__price {
+    font-weight: 300;
+    font-size: 6rem;
+    line-height: .7;
+    margin-bottom: 15px; }
+    .card__price:before {
+      content: '$';
+      vertical-align: top; }
+    .card__price:after {
+      content: '/hr';
+      text-transform: uppercase; }
+    .card__price:before, .card__price:after {
+      font-size: 1.6rem; }
+  .card__features {
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+    display: inline-block; }
+  .card__feature {
+    -moz-text-align-last: left;
+    text-align-last: left;
+    padding: 15px 0; }
+  .card__body {
+    background-color: #fff;
+    padding: 50px 0;
+    margin: 50px 0;
+    border-radius: 50% 50% 0 0;
+    margin: 0 -70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .card__pallete {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/img/one.png); }
+  .card__bucket {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/img/two.png); }
+  .card__hummer {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/img/three.png); }
+  .card__wrap {
+    overflow: hidden;
+    margin: 0 -35px; }
+  .card__footer {
+    position: relative; }
+  .card__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Bebas Neue";
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 30px;
+    padding: 20px 50px;
+    background-color: #6fcffb;
+    border: 2px solid #6fcffb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+    -webkit-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    transition: all .4s ease-in; }
+    .card__btn:hover, .card__btn:focus, .card__btn:active {
+      background-color: #fff;
+      color: #6fcffb; }
+    .card__btn--active {
+      background-color: #fd8d7b;
+      border: 2px solid #fd8d7b;
+      margin: -50px 0;
+      -webkit-transition: all .4s ease-in;
+      -o-transition: all .4s ease-in;
+      transition: all .4s ease-in; }
+      .card__btn--active:hover, .card__btn--active:focus, .card__btn--active:active {
+        background-color: #fff;
+        color: #fd8d7b; }
